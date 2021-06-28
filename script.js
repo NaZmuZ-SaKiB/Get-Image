@@ -29,7 +29,7 @@ function makeImage (Imgages) {
             <img src="http://source.unsplash.com/${image.id}/300x500">
             <div class="upload-by">
                 <img src="${image.user.profile_image.small}">
-                <p>Uploaded by ${image.user.first_name}</p>
+                <p>${image.user.first_name}</p>
             </div>
             <a href="https://www.instagram.com/${image.user.instagram_username}" target="blank" class="insta"><img src="insta.png"></a>
             <a href="${image.urls.full}" class="download"><i class="fas fa-arrow-down"></i></a>
