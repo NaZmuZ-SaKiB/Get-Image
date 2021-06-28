@@ -52,7 +52,9 @@ nav input:focus{
     border-radius: 5px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
     overflow: hidden;
-    background-color: #ccc;
+    background-image: url('icon2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .image-container::after{
     content: '';
