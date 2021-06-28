@@ -40,6 +40,7 @@ form.addEventListener('submit', (event) => {
         // search.value = ''
         API_URL = `https://api.unsplash.com/search/photos?per_page=20&page=${currentpage}&query=${searchInput}&client_id=CyoIzVmV6-Zoi6WDS8iouT1PkEYe4tr9axS8LeZRBPg`
         getImages(API_URL)
+        scrollToTop()
     }else{
         window.location.reload()
     } 
