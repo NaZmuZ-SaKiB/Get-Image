@@ -34,7 +34,9 @@ function makeImage (Imgages) {
 
 form.addEventListener('submit', (event) => {
     event.preventDefault()
-
+    currentpage = 1
+    prev.disabled = true
+    
     const searchInput = search.value
     if (searchInput && searchInput!== '') {
         // search.value = ''
