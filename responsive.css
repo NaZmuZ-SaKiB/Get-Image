@@ -1,0 +1,38 @@
+/*  big tablet  */
+@media only screen and (max-width:1200px){
+
+}
+/*  phablets  */
+@media only screen and (max-width:1023px){
+
+}
+
+/*  small phones  */
+@media only screen and (max-width:767px){
+
+
+}
+
+
+/*  small devices  */
+@media only screen and (max-width:480px){
+    nav{
+        display: block;
+    
+    }
+    nav h1{
+        margin: 10px auto 20px auto;
+        max-width: 120px;
+        text-align: center;
+    }
+    nav input{
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .container{
+        margin-top: 150px;
+    }
+    .image-container{
+        margin: 0.3rem;
+    }
+}
