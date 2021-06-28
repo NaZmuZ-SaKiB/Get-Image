@@ -17,6 +17,7 @@ async function getImages(url){
     const data = await response.json()
     results = data.results
     makeImage(results)
+    console.log(results[1])
 }
 function makeImage (Imgages) {
     container.innerHTML = ''
@@ -25,8 +26,13 @@ function makeImage (Imgages) {
         const imgContainer = document.createElement('div')
         imgContainer.classList.add('image-container')
         imgContainer.innerHTML = `
-        <img src="http://source.unsplash.com/${image.id}/300x500">
-        <p class="upload-by">Uploaded by ${image.user.first_name}</p>
+            <img src="http://source.unsplash.com/${image.id}/300x500">
+            <div class="upload-by">
+                <img src="${image.user.profile_image.small}">
+                <p>Uploaded by ${image.user.first_name}</p>
+            </div>
+            <a href="https://www.instagram.com/${image.user.instagram_username}" target="blank" class="insta"><img src="insta.png"></a>
+            <a href="${image.urls.full}" class="download"><i class="fas fa-arrow-down"></i></a>
         `
         container.appendChild(imgContainer)
     }); 
