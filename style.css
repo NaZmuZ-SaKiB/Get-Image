@@ -76,18 +76,56 @@ nav input:focus{
     transition: 0.5s ease-in-out;
     width: 100%;
 }
-.image-container img:hover{
+.image-container > img:hover{
     transform: scale(1.1);
 }
 .image-container .upload-by{
+
+}
+.image-container .upload-by p{
     background-color: rgba(0, 0, 0, .2);
     border-radius: 5px;
     padding: 5px;
     color: white;
     bottom: 10px;
-    left: 10px;
+    left: 45px;
     position: absolute;
     font-weight: bold;
+}
+.image-container .upload-by img{
+    position: absolute;
+    bottom: 8px;
+    left: 5px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+.insta{
+    position: absolute;
+    bottom: 3px;
+    right: 45px;
+}
+.insta img{
+    height: 35px;
+    width: 35px;
+}
+.download{
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.download i{
+    color: white;
+    font-size: 25px;
+
 }
 .pagination{
     background-color: #ccc;
@@ -104,6 +142,9 @@ nav input:focus{
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+}
+.pagination button:active{
+    transform: scale(.95);
 }
 .pagination button:disabled{
     background-color: transparent;
