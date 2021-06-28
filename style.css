@@ -106,6 +106,7 @@ nav input:focus{
     right: 45px;
 }
 .insta img{
+    border-radius: 6px;
     height: 35px;
     width: 35px;
 }
