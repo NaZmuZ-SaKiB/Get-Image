@@ -26,7 +26,8 @@ function makeImage (Imgages) {
         const imgContainer = document.createElement('div')
         imgContainer.classList.add('image-container')
         imgContainer.innerHTML = `
-            <img src="http://source.unsplash.com/${image.id}/300x500">
+            <div class="loading-effect"></div>
+            <img src="http://source.unsplash.com/${image.id}/300x500" onload="endLoadEffect()">
             <div class="upload-by">
                 <img src="${image.user.profile_image.small}">
                 <p>${image.user.first_name}</p>
@@ -77,6 +78,16 @@ function scrollToTop () {
         top: 0,
         behavior: "smooth"
 
+    })
+}
+
+function endLoadEffect() {
+    const imgs = document.querySelectorAll('.loading-effect')
+    imgs.forEach(img => {
+        setTimeout(() => {
+            img.classList.remove('loading-effect')
+        }, 1000);
+        
     })
 }
 getImages(API_URL)
