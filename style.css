@@ -75,6 +75,7 @@ nav input:focus{
 .image-container img{
     transition: 0.5s ease-in-out;
     width: 100%;
+    cursor: pointer;
 }
 .image-container > img:hover{
     transform: scale(1.1);
